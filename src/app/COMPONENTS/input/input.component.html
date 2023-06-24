@@ -1,0 +1,9 @@
+
+<form>
+    <label for="nome">Nome:</label><br>
+    <input [(ngModel)]="name" type="text" id="nome" name="nome" value=""><br>
+    <label for="appunti">Nota:</label><br>
+    <textarea [(ngModel)]="nota" id="appunti" name="appunti" value="Doe" cols="30" rows="10"></textarea><br>
+    <input (click)="sendNote()" type="button" value="Submit" >
+  </form> 
+  

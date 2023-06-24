@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <app-input></app-input>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h2>Lista</h2>
+        </div>
+    </div>
+    <div *ngFor="let nota of note" class="row">
+        <div class="col">
+            <div class="bg-danger">
+                <h3>{{nota.nome}}</h3>
+            </div>
+        </div>
+        <div class="col">
+            {{nota.appunti}}
+        </div>
+    </div>
+</div>
